@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Elisa Montenegro — Dermatologia Clínica & Estética</title>
+  <meta name="description" content="Dra. Elisa Montenegro — Dermatologista especializada em dermatologia clínica e estética. Tratamentos premium com tecnologia de ponta e cuidado personalizado." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ NAV ══════════════════════════════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-name">Dra. Elisa Montenegro</span>
+        <span class="nav__logo-sub">Dermatologia Clínica & Estética</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contato" class="nav__cta">Agendar Consulta</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#sobre" onclick="closeMobile()">Sobre</a>
+  <a href="#especialidades" onclick="closeMobile()">Especialidades</a>
+  <a href="#diferenciais" onclick="closeMobile()">Diferenciais</a>
+  <a href="#depoimentos" onclick="closeMobile()">Depoimentos</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contato" class="btn btn-gold" onclick="closeMobile()">Agendar Consulta</a>
+</div>
+
+<!-- ══════════════════════════════════════════ HERO ══════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="assets/clinic.png" alt="Clínica Dra. Elisa Montenegro" class="hero__img" />
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge">Dermatologista — CRM/SP 000000</span>
+
+      <h1 class="hero__title">
+        Ciência &amp; arte<br />
+        ao serviço da<br />
+        <em>sua pele.</em>
+      </h1>
+
+      <p class="hero__subtitle">
+        Tratamentos dermatológicos de alta performance com abordagem
+        personalizada, tecnologia de ponta e o olhar clínico refinado
+        de quem cuida de pele há mais de 15 anos.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contato" class="btn btn-gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          Agendar Consulta
+        </a>
+        <a href="#sobre" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:rgba(255,255,255,.85)">
+          Conhecer a Doutora
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <div class="hero__stat-num">15<sup>+</sup></div>
+      <div class="hero__stat-label">Anos de Experiência</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num">8k<sup>+</sup></div>
+      <div class="hero__stat-label">Pacientes Atendidos</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num">98<sup>%</sup></div>
+      <div class="hero__stat-label">Satisfação</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 9l-7 7-7-7"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ SOBRE ══════════════════════════════════════ -->
+<section class="section sobre" id="sobre">
+  <div class="container">
+    <div class="sobre__grid">
+      <!-- Image -->
+      <div class="sobre__image-wrap reveal reveal-left">
+        <div class="sobre__image-bg"></div>
+        <div class="doctor-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span>Dra. Elisa Montenegro</span>
+        </div>
+        <div class="sobre__credential">
+          <div class="sobre__credential-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div>
+            <div class="sobre__credential-title">Membro da SBD</div>
+            <div class="sobre__credential-sub">Sociedade Brasileira de Dermatologia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="reveal reveal-right">
+        <span class="eyebrow">Sobre a Médica</span>
+        <h2 class="heading-lg">Cuidado que vai além da superfície</h2>
+        <span class="gold-rule"></span>
+        <p class="body-text" style="margin-bottom:18px;">
+          Graduada pela Faculdade de Medicina da USP e especialista em Dermatologia
+          pelo Hospital das Clínicas, a Dra. Elisa Montenegro combina rigor científico
+          com sensibilidade estética para oferecer resultados que respeitam a
+          individualidade de cada paciente.
+        </p>
+        <p class="body-text">
+          Com formação complementar em centros de referência na Europa e nos EUA,
+          ela se mantém à vanguarda das inovações em dermatologia clínica,
+          cirúrgica e estética — sempre com foco em segurança, naturalidade e
+          resultados duradouros.
+        </p>
+
+        <ul class="sobre__creds-list">
+          <li class="sobre__cred-item">Especialização em Dermatologia — HC-FMUSP</li>
+          <li class="sobre__cred-item">Fellow em Laser e Estética — New York University</li>
+          <li class="sobre__cred-item">Membro titular da Sociedade Brasileira de Dermatologia</li>
+          <li class="sobre__cred-item">Palestrante em congressos nacionais e internacionais</li>
+          <li class="sobre__cred-item">Professora convidada em pós-graduações de Dermatologia</li>
+        </ul>
+
+        <a href="#contato" class="btn btn-gold" style="margin-top:36px;">Marcar uma Consulta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ ESPECIALIDADES ══════════════════════════════ -->
+<section class="section especialidades" id="especialidades">
+  <div class="container">
+    <div class="especialidades__header reveal">
+      <span class="eyebrow">Área de Atuação</span>
+      <h2 class="heading-lg">Especialidades</h2>
+      <span class="gold-rule gold-rule--center"></span>
+      <p class="body-text" style="max-width:560px;margin:0 auto;">
+        Do diagnóstico preciso ao tratamento personalizado — uma abordagem
+        completa para a saúde e beleza da sua pele.
+      </p>
+    </div>
+
+    <div class="especialidades__grid">
+      <div class="espec-card reveal" style="transition-delay:.05s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+        </div>
+        <h3 class="espec-card__title">Dermatologia Estética</h3>
+        <p class="espec-card__text">Toxina botulínica, preenchimentos, bioestimuladores, harmonização facial e corporal com resultados naturais e duradouros.</p>
+      </div>
+
+      <div class="espec-card reveal" style="transition-delay:.10s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+        </div>
+        <h3 class="espec-card__title">Dermatologia Clínica</h3>
+        <p class="espec-card__text">Diagnóstico e tratamento de acne, rosácea, dermatite, psoríase, vitiligo e todas as condições que afetam saúde cutânea.</p>
+      </div>
+
+      <div class="espec-card reveal" style="transition-delay:.15s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/><path d="m16 16-1.9-1.9"/></svg>
+        </div>
+        <h3 class="espec-card__title">Dermatoscopia & Câncer de Pele</h3>
+        <p class="espec-card__text">Mapeamento corporal digital e diagnóstico precoce de lesões suspeitas com tecnologia dermatoscópica de última geração.</p>
+      </div>
+
+      <div class="espec-card reveal" style="transition-delay:.20s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+        </div>
+        <h3 class="espec-card__title">Lasers & Energia</h3>
+        <p class="espec-card__text">Fototerapia, laser fracionado, radiofrequência, ultrassom focado e luz intensa pulsada para rejuvenescimento e tratamento de manchas.</p>
+      </div>
+
+      <div class="espec-card reveal" style="transition-delay:.25s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>
+        </div>
+        <h3 class="espec-card__title">Hidratação & Skin Care</h3>
+        <p class="espec-card__text">Protocolos médicos de skincare personalizados, peelings químicos, microagulhamento e tratamentos de biorevitalização cutânea.</p>
+      </div>
+
+      <div class="espec-card reveal" style="transition-delay:.30s">
+        <div class="espec-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+        </div>
+        <h3 class="espec-card__title">Dermatologia Capilar</h3>
+        <p class="espec-card__text">Diagnóstico e tratamento de queda de cabelo, tricologia avançada, PRP capilar e acompanhamento de alopecia areata e androgenética.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ DIFERENCIAIS ════════════════════════════════ -->
+<section class="section diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="diferenciais__grid">
+      <!-- Left: text -->
+      <div class="reveal reveal-left">
+        <span class="eyebrow">Por que nos escolher</span>
+        <h2 class="heading-lg diferenciais__title">Uma experiência dermatológica diferente</h2>
+        <span class="gold-rule"></span>
+        <p class="body-text diferenciais__body">
+          Cada consulta é uma experiência única, pensada para colocar você
+          no centro do cuidado — com escuta ativa, diagnóstico preciso
+          e um plano terapêutico feito exclusivamente para o seu perfil.
+        </p>
+
+        <ul class="diferenciais__list">
+          <li class="dif-item">
+            <div class="dif-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <div class="dif-item__title">Diagnóstico Personalizado</div>
+              <div class="dif-item__text">Avaliação completa considerando histórico, genética, estilo de vida e objetivos individuais.</div>
+            </div>
+          </li>
+          <li class="dif-item">
+            <div class="dif-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+            </div>
+            <div>
+              <div class="dif-item__title">Tecnologia de Ponta</div>
+              <div class="dif-item__text">Equipamentos de última geração certificados e protocolos baseados em evidências científicas atuais.</div>
+            </div>
+          </li>
+          <li class="dif-item">
+            <div class="dif-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+            </div>
+            <div>
+              <div class="dif-item__title">Atendimento Exclusivo</div>
+              <div class="dif-item__text">Agenda limitada para garantir dedicação integral em cada consulta, sem pressa e com total atenção.</div>
+            </div>
+          </li>
+          <li class="dif-item">
+            <div class="dif-item__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div>
+              <div class="dif-item__title">Resultados Naturais</div>
+              <div class="dif-item__text">Filosofia de realce da beleza natural, preservando identidade e proporções harmônicas de cada rosto.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: visual cards -->
+      <div class="diferenciais__visual reveal reveal-right">
+        <div class="dif-visual-card">
+          <div class="dif-visual-card__num">15+</div>
+          <div class="dif-visual-card__label">Anos de Experiência</div>
+        </div>
+        <div class="dif-visual-card">
+          <div class="dif-visual-card__num">8.000+</div>
+          <div class="dif-visual-card__label">Pacientes Atendidos</div>
+        </div>
+        <div class="dif-visual-card">
+          <div class="dif-visual-card__num">25+</div>
+          <div class="dif-visual-card__label">Tratamentos Disponíveis</div>
+        </div>
+        <div class="dif-visual-card">
+          <div class="dif-visual-card__num">98%</div>
+          <div class="dif-visual-card__label">Índice de Satisfação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ DEPOIMENTOS ════════════════════════════════ -->
+<section class="section depoimentos" id="depoimentos">
+  <div class="container">
+    <div class="depoimentos__header reveal">
+      <span class="eyebrow">O que dizem nossas pacientes</span>
+      <h2 class="heading-lg">Histórias reais, resultados reais</h2>
+      <span class="gold-rule gold-rule--center"></span>
+    </div>
+
+    <div class="depoimentos__grid">
+      <div class="dep-card reveal" style="transition-delay:.05s">
+        <div class="dep-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="dep-text">"Depois de anos lutando contra a acne sem resultado, encontrei na Dra. Elisa o tratamento que realmente funcionou. A abordagem dela é completamente diferente — ela trata a causa, não só o sintoma. Minha pele nunca esteve tão bem."</p>
+        <div class="dep-author">
+          <div class="dep-avatar">A</div>
+          <div>
+            <div class="dep-name">Ana Carvalho</div>
+            <div class="dep-detail">Paciente há 2 anos · Tratamento para acne</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal" style="transition-delay:.10s">
+        <div class="dep-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="dep-text">"Fiz meu primeiro procedimento estético com a Dra. Elisa e me surpreendi com a naturalidade do resultado. Ela tem um olhar artístico excepcional e foi extremamente cuidadosa durante todo o processo. Me sinto eu mesma, só mais descansada."</p>
+        <div class="dep-author">
+          <div class="dep-avatar">M</div>
+          <div>
+            <div class="dep-name">Mariana Fontes</div>
+            <div class="dep-detail">Paciente há 3 anos · Harmonização facial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal" style="transition-delay:.15s">
+        <div class="dep-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="dep-text">"O mapeamento de pintas detectou uma lesão suspeita que eu nunca teria notado sozinha. O diagnóstico precoce foi fundamental. Sou eternamente grata pela competência e atenção da Dra. Elisa. Ela literalmente me salvou."</p>
+        <div class="dep-author">
+          <div class="dep-avatar">C</div>
+          <div>
+            <div class="dep-name">Camila Rezende</div>
+            <div class="dep-detail">Paciente há 4 anos · Dermatoscopia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ FAQ ════════════════════════════════════════ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="faq__header reveal">
+      <span class="eyebrow">Dúvidas Frequentes</span>
+      <h2 class="heading-lg">Perguntas que fazemos<br />para você não precisar</h2>
+      <span class="gold-rule gold-rule--center"></span>
+    </div>
+
+    <div class="faq__grid">
+      <div class="faq__item reveal">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Qual é a diferença entre dermatologia clínica e estética?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">A dermatologia clínica foca no diagnóstico e tratamento de doenças de pele, cabelos e unhas — como acne, rosácea, eczema, psoríase, câncer de pele, entre outras. Já a dermatologia estética utiliza procedimentos para realçar e rejuvenescer a aparência, como toxina botulínica, preenchimentos e laser. Na prática, muitos pacientes se beneficiam das duas abordagens integradas.</div>
+        </div>
+      </div>
+
+      <div class="faq__item reveal" style="transition-delay:.05s">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Com que frequência devo fazer um check-up dermatológico?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Recomendamos consultas anuais para adultos sem fatores de risco. Para pessoas com histórico familiar de câncer de pele, pele clara, muitas pintas ou exposição solar intensa, a frequência ideal pode ser a cada 6 meses. O mapeamento corporal digital permite acompanhar lesões ao longo do tempo com precisão.</div>
+        </div>
+      </div>
+
+      <div class="faq__item reveal" style="transition-delay:.10s">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Os resultados dos procedimentos estéticos são naturais?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Absolutamente. Nossa filosofia é realçar a beleza natural de cada paciente, jamais padronizar ou "congelar" expressões. A Dra. Elisa utiliza volumes mínimos e técnicas refinadas para obter resultados sutis e harmoniosos. O objetivo é que você pareça mais descansada e saudável, não "tratada".</div>
+        </div>
+      </div>
+
+      <div class="faq__item reveal" style="transition-delay:.15s">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Quantas sessões são necessárias para tratar acne?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">O tratamento da acne é altamente individualizado. Os primeiros resultados costumam aparecer entre 4 e 8 semanas após o início do protocolo correto. Casos mais complexos podem requerer combinações de tratamentos tópicos, orais e procedimentos em consultório. O acompanhamento regular é essencial para ajustar a terapia conforme a resposta da pele.</div>
+        </div>
+      </div>
+
+      <div class="faq__item reveal" style="transition-delay:.20s">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Como funciona o agendamento e há lista de espera?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Você pode agendar sua consulta por WhatsApp, telefone ou pelo formulário neste site. Por mantermos uma agenda limitada para garantir qualidade de atendimento, recomendamos agendamento com antecedência. Em casos urgentes, como suspeita de lesão maligna, priorizamos o atendimento rapidamente.</div>
+        </div>
+      </div>
+
+      <div class="faq__item reveal" style="transition-delay:.25s">
+        <button class="faq__question" onclick="toggleFaq(this)">
+          Os procedimentos causam dor? Há período de recuperação?
+          <div class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">A maioria dos procedimentos é muito bem tolerada. Utilizamos anestésicos tópicos e técnicas que minimizam o desconforto. O tempo de recuperação varia: toxina botulínica e preenchimentos praticamente não têm downtime; peelings e lasers mais agressivos podem requerer de 3 a 7 dias. Tudo será explicado detalhadamente na consulta de planejamento.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ CONTATO ════════════════════════════════════ -->
+<section class="section contato" id="contato">
+  <div class="container">
+    <div class="contato__grid">
+      <!-- Info -->
+      <div class="reveal reveal-left">
+        <span class="eyebrow">Fale Conosco</span>
+        <h2 class="heading-lg">Agende sua consulta</h2>
+        <span class="gold-rule"></span>
+        <p class="body-text">
+          Dê o primeiro passo para transformar a saúde e a beleza da
+          sua pele. Nossa equipe está pronta para orientar você e
+          encontrar o melhor horário.
+        </p>
+
+        <div class="contato__items">
+          <div class="contato__item">
+            <div class="contato__item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+            <div>
+              <div class="contato__item-label">Endereço</div>
+              <div class="contato__item-value">Rua Oscar Freire, 1200 — Jardins<br />São Paulo — SP, 01426-001</div>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <div class="contato__item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.99 3.46 2 2 0 0 1 4 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+            <div>
+              <div class="contato__item-label">Telefone & WhatsApp</div>
+              <div class="contato__item-value">(11) 99999-9999</div>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <div class="contato__item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+            <div>
+              <div class="contato__item-label">Horário de Atendimento</div>
+              <div class="contato__item-value">Segunda a Sexta: 8h às 18h<br />Sábados: 9h às 13h</div>
+            </div>
+          </div>
+
+          <div class="contato__item">
+            <div class="contato__item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+            <div>
+              <div class="contato__item-label">E-mail</div>
+              <div class="contato__item-value">contato@draelisamontenegro.com.br</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contato__form reveal reveal-right">
+        <span class="eyebrow" style="margin-bottom:12px;">Formulário de Contato</span>
+        <h3 class="heading-md" style="margin-bottom:28px;">Envie sua mensagem</h3>
+
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nome">Nome Completo</label>
+              <input class="form-input" type="text" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefone">Telefone / WhatsApp</label>
+              <input class="form-input" type="tel" id="telefone" placeholder="(11) 99999-9999" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-input" type="email" id="email" placeholder="seu@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="especialidade">Especialidade de Interesse</label>
+            <select class="form-select" id="especialidade">
+              <option value="">Selecione uma opção</option>
+              <option>Dermatologia Clínica</option>
+              <option>Dermatologia Estética</option>
+              <option>Dermatoscopia / Check-up</option>
+              <option>Lasers & Energia</option>
+              <option>Tratamento Capilar</option>
+              <option>Outra</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensagem">Mensagem (opcional)</label>
+            <textarea class="form-textarea" id="mensagem" placeholder="Descreva brevemente sua necessidade ou dúvida..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold form-submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ FOOTER ════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">Dra. Elisa Montenegro</div>
+        <div class="footer__brand-sub">Dermatologia Clínica & Estética</div>
+        <p class="footer__brand-text">Cuidado dermatológico premium com abordagem científica e sensibilidade estética para transformar a saúde da sua pele.</p>
+      </div>
+
+      <div>
+        <div class="footer__heading">Navegação</div>
+        <ul class="footer__links">
+          <li><a href="#sobre">Sobre a Doutora</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__heading">Tratamentos</div>
+        <ul class="footer__links">
+          <li><a href="#especialidades">Toxina Botulínica</a></li>
+          <li><a href="#especialidades">Preenchimento Facial</a></li>
+          <li><a href="#especialidades">Laser Fracionado</a></li>
+          <li><a href="#especialidades">Tratamento de Acne</a></li>
+          <li><a href="#especialidades">Mapeamento Corporal</a></li>
+          <li><a href="#especialidades">PRP Capilar</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 <span>Dra. Elisa Montenegro</span> — Todos os direitos reservados</p>
+      <p class="footer__cfm">CRM/SP 000000 · CFM nº 000000/00</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════ WHATSAPP ═══════════════════════════════════ -->
+<a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Elisa%20Montenegro." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<div class="whatsapp-tooltip">Fale pelo WhatsApp</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+
+</body>
+</html>
