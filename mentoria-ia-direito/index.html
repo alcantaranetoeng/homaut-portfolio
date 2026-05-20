@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mentoria IA para Direito com Myrelle Santiago. Inteligência Artificial com estratégia, ética e segurança na rotina jurídica.">
+  <meta name="keywords" content="IA para Direito, Inteligência Artificial jurídica, mentoria jurídica, Myrelle Santiago, produtividade jurídica, prompts jurídicos">
+  <meta property="og:title" content="Mentoria IA para Direito — Myrelle Santiago">
+  <meta property="og:description" content="Inteligência Artificial aplicada ao Direito com estratégia, ética e segurança.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A1628">
+  <title>Mentoria IA para Direito — Myrelle Santiago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE PROGRESSO -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-name">Myrelle Santiago</span>
+        <span class="logo-sub">Mentoria IA para Direito</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#para-quem" class="nav-link">Para quem</a></li>
+        <li><a href="#aprender" class="nav-link">Conteúdo</a></li>
+        <li><a href="#modulos" class="nav-link">Módulos</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        <li>
+          <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+             class="btn-nav" target="_blank" rel="noopener">Falar com Myrelle</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-pattern" aria-hidden="true"></div>
+    <div class="hero-container">
+
+      <div class="hero-text fade-up">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          <i data-lucide="sparkles" class="badge-icon"></i>
+          Mentoria especializada · Direito &amp; Inteligência Artificial
+        </div>
+
+        <h1 class="hero-title">
+          Inteligência Artificial aplicada ao Direito com
+          <em>estratégia, ética e segurança</em>
+        </h1>
+
+        <p class="hero-subtitle">
+          Mentoria prática para advogados, estudantes e profissionais jurídicos que desejam usar IA para ganhar produtividade, organizar estudos, estruturar textos e melhorar sua rotina profissional.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+             class="btn-primary" target="_blank" rel="noopener">
+            Quero saber mais sobre a mentoria
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#sobre" class="btn-ghost">Conhecer Myrelle</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <i data-lucide="badge-check" class="trust-icon"></i>
+            Graduada pela UFS
+          </div>
+          <div class="trust-item">
+            <i data-lucide="badge-check" class="trust-icon"></i>
+            Servidora do MP/SE
+          </div>
+          <div class="trust-item">
+            <i data-lucide="badge-check" class="trust-icon"></i>
+            Mestranda em Direito
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-col fade-right">
+        <div class="hero-image-frame">
+          <img src="assets/hero-myrelle.png"
+               alt="Myrelle Santiago — Mentoria IA para Direito"
+               class="hero-img" loading="eager">
+          <div class="hero-frame-ring" aria-hidden="true"></div>
+          <div class="hero-corner hero-corner--tl" aria-hidden="true"></div>
+          <div class="hero-corner hero-corner--br" aria-hidden="true"></div>
+
+          <!-- Floating credential cards -->
+          <div class="hero-cred hero-cred--top">
+            <div class="hero-cred-icon"><i data-lucide="shield-check"></i></div>
+            <div class="hero-cred-text">
+              <strong>Servidora Efetiva</strong>
+              <span>Ministério Público · SE</span>
+            </div>
+          </div>
+
+          <div class="hero-cred hero-cred--bottom">
+            <div class="hero-cred-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="hero-cred-text">
+              <strong>Mestranda em Direito</strong>
+              <span>Universidade Federal de Sergipe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F7F3EE"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="section section-beige" id="para-quem">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Público</span>
+        <h2 class="section-title">Esta mentoria foi feita para você que...</h2>
+      </div>
+      <div class="audience-grid fade-up">
+
+        <div class="audience-card">
+          <div class="audience-icon">
+            <i data-lucide="scale"></i>
+          </div>
+          <h3>Advogados</h3>
+          <p>Que desejam usar IA para otimizar a rotina, estruturar peças e conduzir pesquisas com mais eficiência e organização.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3>Estudantes de Direito</h3>
+          <p>Que querem usar IA para organizar estudos, facilitar revisões e se preparar com mais método para provas e concursos.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon">
+            <i data-lucide="building-2"></i>
+          </div>
+          <h3>Servidores Públicos</h3>
+          <p>Que atuam em órgãos jurídicos e desejam incorporar ferramentas de IA ao dia a dia com segurança e responsabilidade.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <h3>Profissionais Jurídicos</h3>
+          <p>Que trabalham em cartórios, consultorias ou áreas correlatas e querem modernizar seus processos de trabalho.</p>
+        </div>
+
+        <div class="audience-card">
+          <div class="audience-icon">
+            <i data-lucide="landmark"></i>
+          </div>
+          <h3>Escritórios de Advocacia</h3>
+          <p>Que desejam modernizar processos internos e preparar suas equipes para um ambiente jurídico cada vez mais tecnológico.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMAS -->
+  <section class="section section-white" id="problemas">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Diagnóstico</span>
+        <h2 class="section-title">Você se identifica com algum desses cenários?</h2>
+        <p class="section-desc">A maioria dos profissionais jurídicos enfrenta esses obstáculos ao tentar usar IA pela primeira vez — sem método, sem contexto, sem direção.</p>
+      </div>
+      <div class="problemas-grid fade-up">
+
+        <div class="problema-card">
+          <span class="problema-num">01</span>
+          <h3>Insegurança no uso da IA</h3>
+          <p>Não sabe ao certo quais ferramentas são adequadas para o trabalho jurídico, nem como usá-las com responsabilidade.</p>
+        </div>
+
+        <div class="problema-card">
+          <span class="problema-num">02</span>
+          <h3>Excesso de informação sem método</h3>
+          <p>Há muito conteúdo sobre IA disponível, mas pouco voltado à realidade jurídica — e isso gera mais confusão do que clareza.</p>
+        </div>
+
+        <div class="problema-card">
+          <span class="problema-num">03</span>
+          <h3>Medo de usar de forma inadequada</h3>
+          <p>O receio de comprometer a qualidade técnica ou violar princípios deontológicos faz com que muitos evitem a IA por completo.</p>
+        </div>
+
+        <div class="problema-card">
+          <span class="problema-num">04</span>
+          <h3>Baixa produtividade na rotina jurídica</h3>
+          <p>Tarefas repetitivas, pesquisas morosas e organização de textos consomem um tempo que poderia ser melhor aproveitado.</p>
+        </div>
+
+        <div class="problema-card">
+          <span class="problema-num">05</span>
+          <h3>Dificuldade para organizar estudos</h3>
+          <p>O volume de material é imenso, e sem um sistema eficiente, a sensação de estagnação se instala rapidamente.</p>
+        </div>
+
+        <div class="problema-card">
+          <span class="problema-num">06</span>
+          <h3>Textos que demandam muito tempo</h3>
+          <p>A estruturação de petições, pareceres e resumos ainda é feita de forma manual, sem apoio de ferramentas que poderiam agilizar o processo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VAI APRENDER -->
+  <section class="section section-beige" id="aprender">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Conteúdo</span>
+        <h2 class="section-title">O que você vai aprender nesta mentoria</h2>
+        <p class="section-desc">Conteúdo construído a partir da realidade jurídica, com linguagem acessível e aplicação direta na sua rotina.</p>
+      </div>
+      <div class="aprender-grid fade-up">
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Fundamentos práticos de Inteligência Artificial</h4>
+            <p>Entender o que a IA realmente faz — sem jargões — e como integrá-la ao contexto jurídico.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Prompts jurídicos na prática</h4>
+            <p>Como formular instruções claras para obter resultados úteis em pesquisas, revisões e estruturação de textos.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Organização de estudos com IA</h4>
+            <p>Criar rotinas mais inteligentes, com resumos automáticos, mapas de conteúdo e revisão dirigida.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Revisão e estruturação de textos jurídicos</h4>
+            <p>Usar IA como apoio à revisão de peças, organização de argumentos e estruturação de documentos com mais clareza.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Apoio à pesquisa jurídica</h4>
+            <p>Otimizar buscas de jurisprudência, doutrina e legislação com o auxílio estratégico de ferramentas de IA.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Uso responsável e ético da IA</h4>
+            <p>Compreender os limites éticos do uso da IA no Direito e como preservar a responsabilidade técnica e profissional.</p>
+          </div>
+        </div>
+
+        <div class="aprender-item">
+          <div class="aprender-check" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+          <div class="aprender-body">
+            <h4>Fluxos de produtividade jurídica</h4>
+            <p>Criar sistemas de trabalho organizados que integram IA de forma natural e sustentável ao dia a dia profissional.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="aprender-cta fade-up">
+        <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+           class="btn-primary" target="_blank" rel="noopener">
+          Quero participar da mentoria
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section-navy" id="como-funciona">
+    <div class="container">
+      <div class="como-inner">
+
+        <div class="como-image fade-left">
+          <div class="como-image-frame">
+            <img src="assets/mentoria-myrelle.png"
+                 alt="Como funciona a Mentoria IA para Direito — Myrelle Santiago"
+                 loading="lazy">
+            <div class="como-corner como-corner--tl" aria-hidden="true"></div>
+            <div class="como-corner como-corner--br" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="como-content fade-right">
+          <span class="section-label light">Metodologia</span>
+          <h2 class="section-title light">Uma mentoria construída com método e propósito</h2>
+          <p class="como-desc">Esta não é uma formação genérica sobre IA. É um programa pensado a partir da realidade jurídica — com linguagem acessível, exemplos aplicados e orientação direcionada à sua área de atuação.</p>
+
+          <div class="metodologia-steps">
+            <div class="metodo-step">
+              <div class="metodo-num">1</div>
+              <div class="metodo-body">
+                <h4>Orientação personalizada</h4>
+                <p>Conteúdo e direcionamento adaptados à sua área de atuação e ao seu nível de familiaridade com tecnologia.</p>
+              </div>
+            </div>
+            <div class="metodo-step">
+              <div class="metodo-num">2</div>
+              <div class="metodo-body">
+                <h4>Exemplos aplicados ao Direito</h4>
+                <p>Casos práticos extraídos da realidade jurídica, prontos para replicar diretamente na sua rotina.</p>
+              </div>
+            </div>
+            <div class="metodo-step">
+              <div class="metodo-num">3</div>
+              <div class="metodo-body">
+                <h4>Exercícios e aplicação imediata</h4>
+                <p>Atividades que consolidam o aprendizado e permitem que você use o que aprendeu desde o primeiro encontro.</p>
+              </div>
+            </div>
+            <div class="metodo-step">
+              <div class="metodo-num">4</div>
+              <div class="metodo-body">
+                <h4>Suporte e acompanhamento</h4>
+                <p>Acesso direto para dúvidas, revisões e orientação ao longo de todo o programa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section class="section section-white" id="modulos">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Programa</span>
+        <h2 class="section-title">Módulos da mentoria</h2>
+        <p class="section-desc">Uma jornada estruturada do essencial ao aplicado, com foco na prática jurídica real.</p>
+      </div>
+      <div class="modulos-grid fade-up">
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">01</span>
+            <div class="modulo-icon"><i data-lucide="brain-circuit"></i></div>
+          </div>
+          <h3>Introdução à IA no Direito</h3>
+          <p>O que é IA, como funciona na prática e quais ferramentas são mais relevantes para o profissional jurídico hoje.</p>
+          <ul class="modulo-list">
+            <li>Conceitos fundamentais sem tecnicismos</li>
+            <li>Panorama das ferramentas disponíveis</li>
+            <li>Mitos e verdades sobre IA no Direito</li>
+          </ul>
+        </div>
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">02</span>
+            <div class="modulo-icon"><i data-lucide="message-square"></i></div>
+          </div>
+          <h3>Prompts Jurídicos na Prática</h3>
+          <p>Como formular instruções eficientes para obter resultados úteis e confiáveis no contexto jurídico.</p>
+          <ul class="modulo-list">
+            <li>Estrutura de um bom prompt jurídico</li>
+            <li>Biblioteca de prompts por área do Direito</li>
+            <li>Erros comuns e como evitá-los</li>
+          </ul>
+        </div>
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">03</span>
+            <div class="modulo-icon"><i data-lucide="file-search"></i></div>
+          </div>
+          <h3>Pesquisa, Revisão e Organização de Textos</h3>
+          <p>Ferramentas e técnicas para apoiar a pesquisa jurídica e melhorar a estrutura de documentos e peças.</p>
+          <ul class="modulo-list">
+            <li>Pesquisa de jurisprudência e doutrina</li>
+            <li>Revisão de peças com apoio da IA</li>
+            <li>Organização e hierarquia de argumentos</li>
+          </ul>
+        </div>
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">04</span>
+            <div class="modulo-icon"><i data-lucide="timer"></i></div>
+          </div>
+          <h3>Produtividade para Estudos e Rotina Profissional</h3>
+          <p>Sistemas de organização que integram IA de forma eficiente ao dia a dia do profissional jurídico.</p>
+          <ul class="modulo-list">
+            <li>Criação de rotinas de estudo com IA</li>
+            <li>Resumos automáticos e mapas de conteúdo</li>
+            <li>Gestão do tempo na rotina jurídica</li>
+          </ul>
+        </div>
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">05</span>
+            <div class="modulo-icon"><i data-lucide="shield-check"></i></div>
+          </div>
+          <h3>Cuidados Éticos e Limites do Uso da IA</h3>
+          <p>Como usar IA com responsabilidade, preservando a qualidade técnica e observando os princípios deontológicos.</p>
+          <ul class="modulo-list">
+            <li>Responsabilidade técnica do profissional</li>
+            <li>Proteção de dados e sigilo profissional</li>
+            <li>O que a IA não pode fazer pelo advogado</li>
+          </ul>
+        </div>
+
+        <div class="modulo-card">
+          <div class="modulo-header">
+            <span class="modulo-num">06</span>
+            <div class="modulo-icon"><i data-lucide="laptop"></i></div>
+          </div>
+          <h3>Aplicações Práticas no Dia a Dia Jurídico</h3>
+          <p>Casos reais de uso da IA em diferentes áreas do Direito, com exemplos prontos para aplicar imediatamente.</p>
+          <ul class="modulo-list">
+            <li>Aplicações nas áreas penal, cível e trabalhista</li>
+            <li>Fluxos de trabalho completos com IA</li>
+            <li>Próximos passos e evolução contínua</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section-beige" id="sobre">
+    <div class="container">
+      <div class="sobre-inner">
+
+        <div class="sobre-col-img fade-left">
+          <div class="sobre-image-frame">
+            <img src="assets/sobre-myrelle.png"
+                 alt="Myrelle Santiago — Advogada e Mentora" loading="lazy">
+            <div class="sobre-ring" aria-hidden="true"></div>
+            <div class="sobre-corner sobre-corner--tr" aria-hidden="true"></div>
+            <div class="sobre-corner sobre-corner--bl" aria-hidden="true"></div>
+          </div>
+          <div class="sobre-credentials">
+            <div class="credential-item">
+              <div class="cred-icon"><i data-lucide="shield-check"></i></div>
+              <span>Servidora Efetiva — MP/SE</span>
+            </div>
+            <div class="credential-item">
+              <div class="cred-icon"><i data-lucide="graduation-cap"></i></div>
+              <span>Mestranda em Direito · UFS</span>
+            </div>
+            <div class="credential-item">
+              <div class="cred-icon"><i data-lucide="scale"></i></div>
+              <span>Penal · Cível · Trabalhista</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-col-text fade-right">
+          <span class="section-label">Quem vai te guiar</span>
+          <h2 class="section-title">Myrelle Santiago</h2>
+          <div class="sobre-text">
+            <p>Myrelle Santiago é advogada e servidora pública efetiva do Ministério Público do Estado de Sergipe — uma trajetória construída com rigor acadêmico e experiência real no exercício do Direito.</p>
+            <p>Graduada em Direito pela Universidade Federal de Sergipe (UFS), pós-graduada em Direito do Trabalho e Previdenciário, ela consolidou sua formação com atuação nas áreas penal, cível e trabalhista.</p>
+            <p>Hoje, como mestranda em Direito pela Universidade Federal de Sergipe, Myrelle une base acadêmica sólida com uma visão contemporânea sobre o papel da tecnologia no exercício jurídico — e é a partir dessa combinação que nasceu a Mentoria IA para Direito.</p>
+            <blockquote class="sobre-quote">
+              "Minha proposta não é transformar advogados em programadores. É mostrar, com método e clareza, como a Inteligência Artificial pode se tornar uma aliada real no trabalho jurídico — sem abrir mão da responsabilidade, do rigor técnico e da ética que a profissão exige."
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS -->
+  <section class="section section-navy" id="bonus">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label light">Materiais exclusivos</span>
+        <h2 class="section-title light">O que acompanha a mentoria</h2>
+        <p class="section-desc light">Além dos encontros, você recebe materiais práticos para aplicar imediatamente no seu dia a dia.</p>
+      </div>
+      <div class="bonus-grid fade-up">
+
+        <div class="bonus-card">
+          <div class="bonus-icon"><i data-lucide="book-open"></i></div>
+          <h3>Biblioteca de Prompts Jurídicos</h3>
+          <p>Coleção curada de prompts organizados por área do Direito, prontos para você adaptar e usar nas suas atividades.</p>
+          <div class="bonus-tag">Acesso imediato</div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-icon"><i data-lucide="clipboard-list"></i></div>
+          <h3>Checklist de Uso Responsável da IA</h3>
+          <p>Guia prático com os pontos de atenção que todo profissional jurídico deve considerar antes e durante o uso da IA.</p>
+          <div class="bonus-tag">Material exclusivo</div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-icon"><i data-lucide="calendar"></i></div>
+          <h3>Modelo de Fluxo de Estudos com IA</h3>
+          <p>Template de rotina de estudos com IA integrada, adaptável ao seu ritmo e seus objetivos profissionais.</p>
+          <div class="bonus-tag">Template editável</div>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bonus-icon"><i data-lucide="clock"></i></div>
+          <h3>Guia de Produtividade Jurídica</h3>
+          <p>Manual com estratégias, ferramentas e metodologias para organizar melhor o tempo e as entregas na rotina jurídica.</p>
+          <div class="bonus-tag">Guia completo</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-white" id="faq">
+    <div class="container faq-container">
+      <div class="section-header fade-up">
+        <span class="section-label">Dúvidas frequentes</span>
+        <h2 class="section-title">Perguntas que surgem com frequência</h2>
+      </div>
+      <div class="faq-list fade-up">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso saber tecnologia para participar?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Não. A mentoria é voltada para profissionais e estudantes de Direito, independentemente do nível de familiaridade com tecnologia. O conteúdo começa do básico e avança de forma gradual, sempre com linguagem acessível e exemplos jurídicos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>A mentoria serve para estudantes de Direito?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Sim. O programa é especialmente relevante para estudantes que desejam organizar melhor seus estudos, preparar-se para concursos e estágios, e desenvolver desde cedo uma visão competente sobre o uso responsável da IA no Direito.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>A IA substitui o trabalho jurídico?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Não. A IA é uma ferramenta de apoio — e a mentoria parte justamente desse princípio. A responsabilidade técnica, o julgamento jurídico e a relação com o cliente são atribuições exclusivamente humanas. O que a IA faz é ajudar na organização, pesquisa, revisão e estruturação do trabalho, nunca substituir o profissional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>É indicado para advogados iniciantes?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Sim. Iniciar a carreira com boas práticas de produtividade e tecnologia é uma vantagem significativa. A mentoria ajuda advogados iniciantes a construir, desde o começo, uma rotina organizada e eficiente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como recebo as orientações da mentoria?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>As orientações são realizadas de forma remota, com encontros ao vivo, materiais disponibilizados digitalmente e suporte para dúvidas. Os detalhes do formato são informados no momento do contato, pois podem variar conforme o programa contratado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>A mentoria é prática ou apenas teórica?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            <p>É essencialmente prática. O conteúdo teórico existe para contextualizar, mas o foco é sempre na aplicação real — com exemplos, exercícios e situações diretamente relacionadas ao trabalho jurídico. Você sai de cada encontro com algo que pode usar imediatamente.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-bg-wrap">
+      <img src="assets/banner-myrelle.png" alt="" class="cta-bg-img" loading="lazy" aria-hidden="true">
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container cta-content fade-up">
+      <span class="section-label light">Próximo passo</span>
+      <h2>Pronto para integrar a IA à sua prática jurídica?</h2>
+      <p>Esta mentoria existe para que você tenha clareza, método e segurança ao usar Inteligência Artificial no seu trabalho. Entre em contato e saiba como dar esse passo com responsabilidade.</p>
+      <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+         class="btn-whatsapp-large" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        Quero saber mais sobre a mentoria
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-title">Mentoria IA para Direito</p>
+          <p class="footer-name">por Myrelle Santiago</p>
+        </div>
+        <div class="footer-disclaimer">
+          <p>A Inteligência Artificial deve ser utilizada como ferramenta de apoio. A responsabilidade técnica e jurídica permanece com o profissional.</p>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+             target="_blank" rel="noopener" class="footer-wa">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            +55 79 99601-8393
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Myrelle Santiago &middot; Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FIXO -->
+  <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mentoria%20IA%20para%20Direito%20e%20gostaria%20de%20saber%20mais."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com Myrelle Santiago">
+    <div class="wa-ripple" aria-hidden="true"></div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="wa-label">Falar com Myrelle</span>
+  </a>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
