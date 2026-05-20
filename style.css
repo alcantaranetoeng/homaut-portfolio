@@ -206,7 +206,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .nav-logo { display: flex; align-items: center; }
 .nav-logo-img {
-  height: 46px;
+  height: 58px;
   width: auto;
   display: block;
 }
@@ -522,21 +522,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Projects notice */
 .projects-notice {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 2.25rem;
-  padding: 0.75rem 1.1rem;
+  gap: 0.65rem;
+  margin-bottom: 2.5rem;
+  padding: 0.7rem 1.2rem;
   background: var(--gray-50);
   border: 1px solid var(--gray-200);
-  border-left: 3px solid var(--gray-400);
+  border-left: 2px solid var(--gray-400);
+  border-radius: 6px;
 }
 .projects-notice svg {
   flex-shrink: 0;
   color: var(--gray-400);
 }
 .projects-notice span {
-  font-size: 0.75rem;
+  font-size: 0.73rem;
   font-weight: 400;
   color: var(--gray-600);
   letter-spacing: 0.01em;
@@ -546,21 +547,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Cards grid */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
 }
 
 /* Card */
 .card {
   border: 1px solid var(--gray-200);
+  border-radius: 10px;
   background: var(--white);
-  transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
   overflow: hidden;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-  border-color: transparent;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 56px rgba(0,0,0,0.1), 0 6px 16px rgba(0,0,0,0.06);
+  border-color: var(--gray-100);
 }
 
 .card-link {
@@ -595,12 +598,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  background: rgba(14,14,14,0.72);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  gap: 0.6rem;
+  background: rgba(10,10,10,0.65);
+  backdrop-filter: blur(4px) saturate(1.2);
+  -webkit-backdrop-filter: blur(4px) saturate(1.2);
   opacity: 0;
-  transition: opacity var(--t);
+  transition: opacity 0.32s var(--ease);
 }
 .card:hover .card-hover-layer { opacity: 1; }
 
@@ -637,14 +640,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-variant-numeric: tabular-nums;
 }
 .card-tag {
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--gray-400);
-  padding: 0.2rem 0.65rem;
+  padding: 0.22rem 0.7rem;
   border: 1px solid var(--gray-200);
+  border-radius: 3px;
+  background: var(--gray-50);
 }
+
+.card-tag-real {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #15803d;
+  padding: 0.22rem 0.7rem;
+  border: 1px solid rgba(22,163,74,0.28);
+  border-radius: 3px;
+  background: rgba(22,163,74,0.07);
+}
+.card-tag-real svg { flex-shrink: 0; }
 
 .card-title {
   font-family: 'DM Serif Display', Georgia, serif;
@@ -668,20 +689,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--black);
-  transition: gap var(--t-fast), color var(--t-fast);
+  transition: gap 0.22s var(--ease), color 0.22s var(--ease);
 }
 .card-action svg {
   width: 16px;
   height: 16px;
-  transition: transform var(--t-fast);
+  transition: transform 0.22s var(--ease);
 }
-.card:hover .card-action { gap: 0.7rem; color: var(--gray-800); }
-.card:hover .card-action svg { transform: translateX(3px); }
+.card:hover .card-action { gap: 0.75rem; }
+.card:hover .card-action svg { transform: translateX(4px); }
 
 /* ================================================================
    ARQ ILLUSTRATION (Card 1)
@@ -814,6 +835,128 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .derm-line:nth-child(1) { width: 80px; }
 .derm-line:nth-child(2) { width: 60px; }
 .derm-line:nth-child(3) { width: 44px; }
+
+/* ================================================================
+   LAW/AI ILLUSTRATION (Card 3)
+   ================================================================ */
+.law-visual {
+  background: linear-gradient(155deg, #0c1445 0%, #1a0a38 60%, #0c1528 100%);
+}
+
+.law-art {
+  position: relative;
+  width: 200px;
+  height: 190px;
+}
+
+.law-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.law-gl {
+  position: absolute;
+  background: rgba(148,130,240,0.07);
+}
+.law-gl.h { left: 0; right: 0; height: 1px; }
+.law-gl.h:nth-child(1) { top: 33%; }
+.law-gl.h:nth-child(2) { top: 66%; }
+.law-gl.v { top: 0; bottom: 0; width: 1px; }
+.law-gl.v:nth-child(3) { left: 33%; }
+.law-gl.v:nth-child(4) { left: 66%; }
+
+.law-base {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 2px;
+  background: rgba(148,130,240,0.38);
+  border-radius: 1px;
+}
+
+.law-pillar {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 108px;
+  background: linear-gradient(to top, rgba(148,130,240,0.45), rgba(148,130,240,0.18));
+}
+
+.law-pivot {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(148,130,240,0.9);
+  box-shadow: 0 0 10px rgba(148,130,240,0.45);
+}
+
+.law-beam {
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 148px;
+  height: 1px;
+  background: rgba(148,130,240,0.5);
+}
+
+.law-str-l {
+  position: absolute;
+  width: 1px;
+  background: rgba(148,130,240,0.28);
+  top: 38px;
+  left: 26px;
+  height: 38px;
+}
+.law-str-r {
+  position: absolute;
+  width: 1px;
+  background: rgba(148,130,240,0.28);
+  top: 38px;
+  right: 26px;
+  height: 44px;
+}
+
+.law-pan-l {
+  position: absolute;
+  width: 52px;
+  height: 12px;
+  border: 1px solid rgba(148,130,240,0.38);
+  border-top: none;
+  background: rgba(148,130,240,0.06);
+  top: 76px;
+  left: 0;
+}
+.law-pan-r {
+  position: absolute;
+  width: 52px;
+  height: 12px;
+  border: 1px solid rgba(148,130,240,0.38);
+  border-top: none;
+  background: rgba(148,130,240,0.06);
+  top: 82px;
+  right: 0;
+}
+
+.law-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(148,130,240,0.6);
+}
+.law-dot.d1 { width: 3px; height: 3px; top: 8px; left: 18px; }
+.law-dot.d2 { width: 4px; height: 4px; top: 14px; right: 22px; box-shadow: 0 0 7px rgba(148,130,240,0.5); }
+.law-dot.d3 { width: 3px; height: 3px; bottom: 28px; left: 22px; }
+.law-dot.d4 { width: 2px; height: 2px; bottom: 48px; right: 18px; }
+.law-dot.d5 { width: 3px; height: 3px; top: 58px; left: 10px; opacity: 0.55; }
+.law-dot.d6 { width: 2px; height: 2px; top: 110px; right: 14px; opacity: 0.4; }
 
 /* ================================================================
    ABOUT
@@ -961,9 +1104,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 1rem;
 }
 .footer-logo {
-  height: 26px;
+  height: 32px;
   width: auto;
-  opacity: 0.65;
+  filter: invert(1);
+  opacity: 0.55;
 }
 .footer-tag {
   font-size: 0.58rem;
@@ -1059,12 +1203,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   :root { --pad-x: 2rem; }
 
   .about-grid { gap: 4rem; }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 860px) {
-  .cards-grid { grid-template-columns: 1fr; }
   .card-visual { height: 280px; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 640px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .card-visual { height: 260px; }
 }
 
 /* ================================================================
