@@ -1,630 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Norvexa Studio — Estúdio de arquitetura premium especializado em projetos residenciais e comerciais únicos.">
-    <meta name="theme-color" content="#0C0C0B">
-    <title>Norvexa Studio — Espaços que Inspiram</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HOMAUT — Estúdio digital especializado em landing pages e projetos institucionais premium." />
+  <title>HOMAUT — Portfólio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="nav" id="nav">
-        <div class="nav__container">
-            <a href="#hero" class="nav__logo">
-                <span class="nav__logo-mark">Norvexa</span>
-                <span class="nav__logo-sub">Studio</span>
-            </a>
-            <ul class="nav__menu" id="navMenu">
-                <li><a href="#sobre" class="nav__link">Sobre</a></li>
-                <li><a href="#projetos" class="nav__link">Projetos</a></li>
-                <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
-                <li><a href="#processo" class="nav__link">Processo</a></li>
-                <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
-                <li><a href="#contato" class="nav__link nav__link--cta">Fale Conosco</a></li>
-            </ul>
-            <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="HOMAUT — início">
+        <img src="./assets/logo-homaut-dark.png" alt="HOMAUT" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#contato" class="nav-link nav-link-cta">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- ================================
-         HERO
-    ================================ -->
-    <section class="hero" id="hero">
-        <div class="hero__bg">
-            <img src="https://picsum.photos/seed/lumi-hero/1920/1080" alt="Projeto arquitetônico Norvexa Studio" class="hero__img">
-        </div>
-        <div class="hero__overlay"></div>
-
-        <div class="hero__content">
-            <div class="hero__label reveal">
-                <span class="hero__label-rule"></span>
-                <span class="hero__label-text">Estúdio de Arquitetura Premium</span>
-                <span class="hero__label-rule"></span>
-            </div>
-            <h1 class="hero__title">
-                <span class="hero__title-line reveal">Espaços</span>
-                <em class="hero__title-line reveal">que Inspiram.</em>
-            </h1>
-            <p class="hero__sub reveal">
-                Transformamos sonhos em projetos únicos que equilibram<br>
-                beleza, funcionalidade e a essência de cada cliente.
-            </p>
-            <div class="hero__cta reveal">
-                <a href="#projetos" class="btn btn--light">Ver Projetos</a>
-                <a href="#contato" class="btn btn--ghost">Fale Conosco</a>
-            </div>
-        </div>
-
-        <div class="hero__foot">
-            <span class="hero__foot-text">São Paulo, Brasil</span>
-            <a href="#sobre" class="hero__scroll" aria-label="Ir para próxima seção">
-                <span class="hero__scroll-bar"></span>
-            </a>
-            <span class="hero__foot-text">Est. 2012</span>
-        </div>
-    </section>
-
-    <!-- ================================
-         SOBRE
-    ================================ -->
-    <section class="sobre" id="sobre">
-        <div class="container">
-            <div class="sobre__grid">
-                <div class="sobre__image reveal">
-                    <img src="https://picsum.photos/seed/lumi-about/700/900" alt="Estúdio Norvexa Studio">
-                    <div class="sobre__badge">
-                        <span class="sobre__badge-number">12+</span>
-                        <span class="sobre__badge-label">Anos de<br>Experiência</span>
-                    </div>
-                </div>
-                <div class="sobre__content reveal">
-                    <p class="eyebrow">Sobre o Estúdio</p>
-                    <h2 class="heading-lg">Uma nova visão<br>de <em>arquitetura</em></h2>
-                    <p class="body-text">A Norvexa Studio nasceu da paixão por criar espaços que contam histórias. Há mais de uma década, transformamos ambientes em experiências únicas, unindo estética contemporânea, funcionalidade e a essência de cada cliente.</p>
-                    <p class="body-text">Nossa equipe multidisciplinar de arquitetos, designers e engenheiros trabalha de forma integrada para entregar projetos que superam expectativas — do conceito à entrega das chaves.</p>
-                    <div class="sobre__stats">
-                        <div class="stat">
-                            <span class="stat__number">180+</span>
-                            <span class="stat__label">Projetos</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat__number">98%</span>
-                            <span class="stat__label">Satisfação</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat__number">15</span>
-                            <span class="stat__label">Premiações</span>
-                        </div>
-                    </div>
-                    <a href="#contato" class="btn btn--primary">Iniciar Projeto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         PROJETOS
-    ================================ -->
-    <section class="projetos" id="projetos">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow">Portfólio</p>
-                <h2 class="heading-lg">Nossos <em>Projetos</em></h2>
-                <p class="section-desc">Uma seleção dos nossos trabalhos mais significativos — cada um com sua história, identidade e propósito único.</p>
-            </div>
-            <div class="projetos__filters reveal">
-                <button class="filter active" data-filter="all">Todos</button>
-                <button class="filter" data-filter="residencial">Residencial</button>
-                <button class="filter" data-filter="comercial">Comercial</button>
-                <button class="filter" data-filter="interiores">Interiores</button>
-            </div>
-            <div class="projetos__grid">
-                <div class="projeto-card reveal" data-category="residencial">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-1/800/600" alt="Casa Serenidade">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Residencial</span>
-                            <h3 class="projeto-card__title">Casa Serenidade</h3>
-                            <p class="projeto-card__local">São Paulo, SP</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card projeto-card--tall reveal" data-category="interiores">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-2/800/1000" alt="Loft Nordic">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Interiores</span>
-                            <h3 class="projeto-card__title">Loft Nordic</h3>
-                            <p class="projeto-card__local">Rio de Janeiro, RJ</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card reveal" data-category="comercial">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-3/800/600" alt="Escritório Horizon">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Comercial</span>
-                            <h3 class="projeto-card__title">Escritório Horizon</h3>
-                            <p class="projeto-card__local">Campinas, SP</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card reveal" data-category="residencial">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-4/800/600" alt="Villa Serena">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Residencial</span>
-                            <h3 class="projeto-card__title">Villa Serena</h3>
-                            <p class="projeto-card__local">Florianópolis, SC</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card reveal" data-category="comercial">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-5/800/600" alt="Galeria Arte Moderna">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Comercial</span>
-                            <h3 class="projeto-card__title">Galeria Arte Moderna</h3>
-                            <p class="projeto-card__local">Belo Horizonte, MG</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projeto-card reveal" data-category="interiores">
-                    <div class="projeto-card__image">
-                        <img src="https://picsum.photos/seed/proj-6/800/600" alt="Apartamento Zenith">
-                        <div class="projeto-card__overlay">
-                            <span class="projeto-card__cat">Interiores</span>
-                            <h3 class="projeto-card__title">Apartamento Zenith</h3>
-                            <p class="projeto-card__local">Curitiba, PR</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         DIFERENCIAIS
-    ================================ -->
-    <section class="diferenciais" id="diferenciais">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow">Por que nos escolher</p>
-                <h2 class="heading-lg">Nossos <em>Diferenciais</em></h2>
-            </div>
-            <div class="diferenciais__grid">
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">✦</div>
-                    <h3 class="dif-card__title">Design Exclusivo</h3>
-                    <p class="dif-card__text">Cada projeto é único, desenvolvido sob medida para refletir a personalidade e as necessidades específicas de cada cliente.</p>
-                </div>
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">◈</div>
-                    <h3 class="dif-card__title">Sustentabilidade</h3>
-                    <p class="dif-card__text">Integramos soluções bioclimáticas e materiais sustentáveis em todos os projetos, sem abrir mão do luxo e da sofisticação.</p>
-                </div>
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">⬡</div>
-                    <h3 class="dif-card__title">Gestão Completa</h3>
-                    <p class="dif-card__text">Acompanhamos todo o processo, do anteprojeto à entrega, garantindo qualidade, prazo e orçamento em cada etapa.</p>
-                </div>
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">◉</div>
-                    <h3 class="dif-card__title">Tecnologia BIM</h3>
-                    <p class="dif-card__text">Utilizamos modelagem 3D e BIM para visualização fiel do resultado final antes mesmo de iniciar a obra.</p>
-                </div>
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">✧</div>
-                    <h3 class="dif-card__title">Rede de Parceiros</h3>
-                    <p class="dif-card__text">Contamos com fornecedores e construtoras selecionados, garantindo os melhores materiais e execução com excelência.</p>
-                </div>
-                <div class="dif-card reveal">
-                    <div class="dif-card__icon">△</div>
-                    <h3 class="dif-card__title">Pós-Entrega</h3>
-                    <p class="dif-card__text">Nosso relacionamento vai além da entrega. Oferecemos suporte e consultoria mesmo após a conclusão do projeto.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         PROCESSO
-    ================================ -->
-    <section class="processo" id="processo">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow">Como Trabalhamos</p>
-                <h2 class="heading-lg">Nosso <em>Processo</em></h2>
-                <p class="section-desc">Uma metodologia refinada que transforma sua visão em realidade com precisão e cuidado em cada etapa.</p>
-            </div>
-            <div class="processo__steps">
-                <div class="passo reveal">
-                    <div class="passo__num">01</div>
-                    <div class="passo__content">
-                        <h3 class="passo__title">Briefing & Imersão</h3>
-                        <p class="passo__text">Ouvimos profundamente seus sonhos, necessidades e estilo de vida. Visitamos o terreno ou imóvel e realizamos um diagnóstico completo do espaço e do contexto.</p>
-                    </div>
-                    <div class="passo__image">
-                        <img src="https://picsum.photos/seed/passo-1/600/400" alt="Briefing e imersão">
-                    </div>
-                </div>
-                <div class="passo passo--reverse reveal">
-                    <div class="passo__num">02</div>
-                    <div class="passo__content">
-                        <h3 class="passo__title">Conceito & Anteprojeto</h3>
-                        <p class="passo__text">Desenvolvemos o partido arquitetônico e apresentamos o conceito visual com plantas, cortes, fachadas e perspectivas 3D fotorrealistas.</p>
-                    </div>
-                    <div class="passo__image">
-                        <img src="https://picsum.photos/seed/passo-2/600/400" alt="Conceito e anteprojeto">
-                    </div>
-                </div>
-                <div class="passo reveal">
-                    <div class="passo__num">03</div>
-                    <div class="passo__content">
-                        <h3 class="passo__title">Projeto Executivo</h3>
-                        <p class="passo__text">Detalhamos toda a documentação técnica: projetos complementares, especificações de materiais, memoriais descritivos e caderno de acabamentos.</p>
-                    </div>
-                    <div class="passo__image">
-                        <img src="https://picsum.photos/seed/passo-3/600/400" alt="Projeto executivo">
-                    </div>
-                </div>
-                <div class="passo passo--reverse reveal">
-                    <div class="passo__num">04</div>
-                    <div class="passo__content">
-                        <h3 class="passo__title">Execução & Entrega</h3>
-                        <p class="passo__text">Acompanhamos a obra com visitas periódicas, garantindo a fiel execução do projeto e antecipando soluções para qualquer imprevisto.</p>
-                    </div>
-                    <div class="passo__image">
-                        <img src="https://picsum.photos/seed/passo-4/600/400" alt="Execução e entrega">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         DEPOIMENTOS
-    ================================ -->
-    <section class="depoimentos" id="depoimentos">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow eyebrow--dim">O que dizem sobre nós</p>
-                <h2 class="heading-lg heading--light"><em>Depoimentos</em></h2>
-            </div>
-            <div class="depoimentos__wrap">
-                <div class="dep__track" id="depTrack">
-                    <div class="dep__slide">
-                        <div class="dep__stars">★★★★★</div>
-                        <blockquote class="dep__quote">"A Norvexa transformou completamente nossa casa. O resultado superou todas as expectativas — é exatamente o lar que sempre sonhamos. A atenção aos detalhes é impressionante."</blockquote>
-                        <div class="dep__author">
-                            <img src="https://picsum.photos/seed/dep-1/80/80" alt="Ana Ferreira" class="dep__avatar">
-                            <div>
-                                <span class="dep__name">Ana Ferreira</span>
-                                <span class="dep__role">Residência em São Paulo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dep__slide">
-                        <div class="dep__stars">★★★★★</div>
-                        <blockquote class="dep__quote">"Profissionalismo e criatividade em cada etapa. A equipe Norvexa entendeu exatamente a identidade que queríamos para nosso escritório. Nossos clientes adoram o espaço!"</blockquote>
-                        <div class="dep__author">
-                            <img src="https://picsum.photos/seed/dep-2/80/80" alt="Carlos Mendes" class="dep__avatar">
-                            <div>
-                                <span class="dep__name">Carlos Mendes</span>
-                                <span class="dep__role">Escritório Corporativo, Campinas</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dep__slide">
-                        <div class="dep__stars">★★★★★</div>
-                        <blockquote class="dep__quote">"Desde o primeiro briefing até a entrega das chaves, a Norvexa foi impecável. Projeto entregue no prazo, dentro do orçamento e com qualidade excepcional. Recomendo a todos!"</blockquote>
-                        <div class="dep__author">
-                            <img src="https://picsum.photos/seed/dep-3/80/80" alt="Mariana Costa" class="dep__avatar">
-                            <div>
-                                <span class="dep__name">Mariana Costa</span>
-                                <span class="dep__role">Apartamento em Curitiba</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dep__slide">
-                        <div class="dep__stars">★★★★★</div>
-                        <blockquote class="dep__quote">"A visão da Norvexa é única. Conseguiram criar um espaço ao mesmo tempo minimalista e aconchegante — algo que eu achava impossível. Resultado simplesmente perfeito."</blockquote>
-                        <div class="dep__author">
-                            <img src="https://picsum.photos/seed/dep-4/80/80" alt="Roberto Lima" class="dep__avatar">
-                            <div>
-                                <span class="dep__name">Roberto Lima</span>
-                                <span class="dep__role">Casa em Florianópolis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dep__controls">
-                    <button class="dep__btn" id="depPrev" aria-label="Anterior">&#8592;</button>
-                    <div class="dep__dots" id="depDots"></div>
-                    <button class="dep__btn" id="depNext" aria-label="Próximo">&#8594;</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         FAQ
-    ================================ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow">Dúvidas Frequentes</p>
-                <h2 class="heading-lg">FAQ</h2>
-            </div>
-            <div class="faq__list reveal">
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Qual é o prazo médio de um projeto arquitetônico?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>O prazo varia conforme a complexidade e o tipo do projeto. Projetos residenciais de médio porte levam em média 3 a 4 meses para o desenvolvimento completo do projeto executivo. A execução de obra tem duração própria, que estimamos após o levantamento do escopo.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Como funciona o processo de contratação?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>Iniciamos com uma reunião de briefing sem custo para conhecer seu projeto. Após essa conversa, apresentamos uma proposta personalizada com escopo, cronograma e honorários. Aprovada a proposta, formalizamos o contrato e iniciamos o trabalho.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Vocês acompanham a execução da obra?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>Sim! Oferecemos o serviço de assessoria de obras, com visitas periódicas ao canteiro para garantir que a execução esteja em conformidade com o projeto. Esse serviço pode ser contratado separadamente e adaptado às suas necessidades.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Vocês trabalham com projetos em todo o Brasil?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>Sim, atendemos clientes em todo o Brasil. Para projetos em outras cidades, realizamos o briefing presencialmente ou por videoconferência, e as visitas à obra são programadas conforme o cronograma de cada projeto.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Quais tipos de projetos vocês desenvolvem?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>Desenvolvemos projetos residenciais (casas, apartamentos, reformas), comerciais (escritórios, lojas, restaurantes, hotéis) e design de interiores. Cada projeto é tratado com a mesma dedicação e atenção aos detalhes, independente do porte.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-item__q">
-                        Como é feita a apresentação do projeto?
-                        <span class="faq-item__icon">+</span>
-                    </button>
-                    <div class="faq-item__a">
-                        <p>Apresentamos em reuniões presenciais ou online, com plantas, cortes, elevações e renderizações 3D fotorrealistas. Utilizamos BIM e, quando aplicável, realidade virtual, para que você visualize o resultado com máxima fidelidade antes de iniciar a obra.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         CTA WHATSAPP
-    ================================ -->
-    <section class="cta-wa">
-        <div class="container">
-            <div class="cta-wa__inner reveal">
-                <p class="eyebrow eyebrow--dim">Vamos conversar?</p>
-                <h2 class="heading-lg heading--light">Seu projeto começa<br>com uma <em>conversa</em></h2>
-                <p class="cta-wa__text">Entre em contato pelo WhatsApp e descubra como podemos transformar seu espaço em algo extraordinário.</p>
-                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20mais%20sobre%20os%20projetos%20da%20Norvexa%20Studio." class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    Falar pelo WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         CONTATO
-    ================================ -->
-    <section class="contato" id="contato">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="eyebrow">Fale Conosco</p>
-                <h2 class="heading-lg">Entre em <em>Contato</em></h2>
-            </div>
-            <div class="contato__grid">
-                <div class="contato__form-wrap reveal">
-                    <form class="contato__form" id="contatoForm" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label" for="nome">Nome completo</label>
-                                <input id="nome" type="text" class="form-input" placeholder="Seu nome" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="email">E-mail</label>
-                                <input id="email" type="email" class="form-input" placeholder="seu@email.com" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label" for="tel">Telefone</label>
-                                <input id="tel" type="tel" class="form-input" placeholder="(11) 99999-9999">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="tipo">Tipo de Projeto</label>
-                                <select id="tipo" class="form-input form-select">
-                                    <option value="">Selecione...</option>
-                                    <option>Residencial</option>
-                                    <option>Comercial</option>
-                                    <option>Interiores</option>
-                                    <option>Reforma</option>
-                                    <option>Outro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="msg">Mensagem</label>
-                            <textarea id="msg" class="form-input form-textarea" placeholder="Conte-nos sobre seu projeto, área aproximada, prazo desejado..." rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
-                        <div class="form-success" id="formSuccess" role="alert">
-                            Mensagem enviada com sucesso! Em breve entraremos em contato.
-                        </div>
-                    </form>
-                </div>
-                <div class="contato__info reveal">
-                    <div class="contato__info-list">
-                        <div class="contato__info-item">
-                            <span class="contato__info-icon" aria-hidden="true">📍</span>
-                            <div>
-                                <span class="contato__info-label">Endereço</span>
-                                <span class="contato__info-value">Rua Oscar Freire, 1200<br>Jardins, São Paulo — SP</span>
-                            </div>
-                        </div>
-                        <div class="contato__info-item">
-                            <span class="contato__info-icon" aria-hidden="true">📞</span>
-                            <div>
-                                <span class="contato__info-label">Telefone</span>
-                                <span class="contato__info-value">(11) 99999-9999</span>
-                            </div>
-                        </div>
-                        <div class="contato__info-item">
-                            <span class="contato__info-icon" aria-hidden="true">✉️</span>
-                            <div>
-                                <span class="contato__info-label">E-mail</span>
-                                <span class="contato__info-value">contato@norvexastudio.com.br</span>
-                            </div>
-                        </div>
-                        <div class="contato__info-item">
-                            <span class="contato__info-icon" aria-hidden="true">⏰</span>
-                            <div>
-                                <span class="contato__info-label">Atendimento</span>
-                                <span class="contato__info-value">Seg–Sex: 9h às 18h<br>Sáb: 9h às 13h</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contato__map">
-                        <iframe
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=-46.680%2C-23.565%2C-46.650%2C-23.545&layer=mapnik&marker=-23.556%2C-46.662"
-                            width="100%" height="240"
-                            style="border:0;"
-                            loading="lazy"
-                            title="Localização Norvexa Studio — Jardins, São Paulo">
-                        </iframe>
-                    </div>
-                    <div class="contato__social">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Pinterest</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================
-         FOOTER
-    ================================ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <a href="#hero" class="footer__logo">
-                        <span class="footer__logo-mark">Norvexa</span>
-                        <span class="footer__logo-sub">Studio</span>
-                    </a>
-                    <p class="footer__tagline">Espaços que inspiram.<br>Projetos que transformam.</p>
-                    <div class="footer__social">
-                        <a href="#" class="footer__social-link" aria-label="Instagram">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                                <circle cx="12" cy="12" r="4"/>
-                                <circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="Pinterest">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect x="2" y="9" width="4" height="12"/>
-                                <circle cx="4" cy="4" r="2"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__col-title">Menu</h4>
-                    <ul>
-                        <li><a href="#sobre">Sobre o Estúdio</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#diferenciais">Diferenciais</a></li>
-                        <li><a href="#processo">Processo de Trabalho</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__col-title">Serviços</h4>
-                    <ul>
-                        <li><a href="#">Projeto Residencial</a></li>
-                        <li><a href="#">Projeto Comercial</a></li>
-                        <li><a href="#">Design de Interiores</a></li>
-                        <li><a href="#">Gerenciamento de Obra</a></li>
-                        <li><a href="#">Consultoria</a></li>
-                    </ul>
-                </div>
-                <div class="footer__newsletter">
-                    <h4 class="footer__col-title">Newsletter</h4>
-                    <p>Receba inspirações e novidades sobre arquitetura e design.</p>
-                    <form class="footer__nl-form" onsubmit="return false;">
-                        <input type="email" placeholder="Seu e-mail" class="footer__nl-input" aria-label="E-mail para newsletter">
-                        <button type="submit" class="footer__nl-btn" aria-label="Inscrever">&#8594;</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>© 2024 Norvexa Studio. Todos os direitos reservados.</p>
-                <p>CAU/SP nº A00000-0 · Desenvolvido com ♥</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20mais%20sobre%20os%20projetos%20da%20Norvexa%20Studio."
-       class="wa-float"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Falar pelo WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-label reveal">
+        <span class="dot"></span>
+        <span>Estúdio Digital</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="reveal line-1">Projetos digitais</span>
+        <em class="reveal line-2">com identidade.</em>
+      </h1>
+      <p class="hero-sub reveal">
+        Criamos landing pages e experiências institucionais que combinam<br class="br-desk" />
+        sofisticação visual com resultado real.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20HOMAUT%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." class="btn-wa" target="_blank" rel="noopener noreferrer">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        <span class="wa-float__tip">Falar pelo WhatsApp</span>
-    </a>
+          </svg>
+          Falar pelo WhatsApp
+        </a>
+        <a href="#sobre" class="btn-text">
+          Sobre o estúdio
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Landing Pages</span>
+      <span class="sep">·</span>
+      <span>Design Premium</span>
+      <span class="sep">·</span>
+      <span>Projetos Institucionais</span>
+      <span class="sep">·</span>
+      <span>UI Sofisticada</span>
+      <span class="sep">·</span>
+      <span>Landing Pages</span>
+      <span class="sep">·</span>
+      <span>Design Premium</span>
+      <span class="sep">·</span>
+      <span>Projetos Institucionais</span>
+      <span class="sep">·</span>
+      <span>UI Sofisticada</span>
+      <span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projetos">
+    <div class="section-container">
+      <header class="section-header reveal">
+        <p class="eyebrow">Portfólio selecionado</p>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-desc">Modelos conceituais desenvolvidos para demonstrar possibilidades de layout, estrutura e experiência visual.</p>
+      </header>
+
+      <div class="projects-notice reveal">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M10 9v5M10 6.5v.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span>Os projetos exibidos são modelos demonstrativos — não representam clientes reais.</span>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card 1: Arquitetura Premium -->
+        <article class="card reveal">
+          <a href="./arquitetura-premium/" class="card-link" target="_blank" rel="noopener noreferrer">
+            <div class="card-visual arq-visual">
+              <div class="card-visual-inner">
+                <!-- Geometric architectural illustration -->
+                <div class="arq-art">
+                  <div class="arq-building">
+                    <div class="arq-col col-1"></div>
+                    <div class="arq-col col-2"></div>
+                    <div class="arq-col col-3"></div>
+                  </div>
+                  <div class="arq-floor"></div>
+                  <div class="arq-grid">
+                    <div class="arq-line h"></div>
+                    <div class="arq-line h"></div>
+                    <div class="arq-line v"></div>
+                    <div class="arq-line v"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-hover-layer">
+                <span class="hover-label">Visualizar projeto</span>
+                <svg class="hover-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-num">01</span>
+                <span class="card-tag">Projeto demonstrativo</span>
+              </div>
+              <h3 class="card-title">Arquitetura Premium</h3>
+              <p class="card-desc">Landing page institucional moderna para escritório de arquitetura premium.</p>
+              <div class="card-action">
+                <span>Visualizar projeto</span>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2: Dermatologia Premium -->
+        <article class="card reveal">
+          <a href="./dermatologia-premium/" class="card-link" target="_blank" rel="noopener noreferrer">
+            <div class="card-visual derm-visual">
+              <div class="card-visual-inner">
+                <!-- Soft clinical illustration -->
+                <div class="derm-art">
+                  <div class="derm-circle c1"></div>
+                  <div class="derm-circle c2"></div>
+                  <div class="derm-circle c3"></div>
+                  <div class="derm-cross">
+                    <div class="derm-cross-h"></div>
+                    <div class="derm-cross-v"></div>
+                  </div>
+                  <div class="derm-lines">
+                    <div class="derm-line"></div>
+                    <div class="derm-line"></div>
+                    <div class="derm-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-hover-layer">
+                <span class="hover-label">Visualizar projeto</span>
+                <svg class="hover-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-num">02</span>
+                <span class="card-tag">Projeto demonstrativo</span>
+              </div>
+              <h3 class="card-title">Dermatologia Premium</h3>
+              <p class="card-desc">Landing page sofisticada para clínica dermatológica premium.</p>
+              <div class="card-action">
+                <span>Visualizar projeto</span>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <p class="eyebrow">Sobre o estúdio</p>
+          <h2 class="about-title">Design com<br /><em>propósito.</em></h2>
+        </div>
+        <div class="about-right reveal">
+          <p class="about-text">
+            HOMAUT é um estúdio digital focado em criar experiências visuais de alto nível.
+            Desenvolvemos landing pages e projetos institucionais que entregam sofisticação
+            estética aliada a performance real.
+          </p>
+          <p class="about-text">
+            Cada detalhe é pensado — da tipografia ao comportamento de scroll — para
+            que a presença digital do cliente seja tão premium quanto o seu serviço.
+          </p>
+          <div class="about-tags">
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Design Responsivo</span>
+            <span class="tag">Performance First</span>
+            <span class="tag">Premium Visual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="section-container">
+      <div class="contact-inner reveal">
+        <p class="eyebrow eyebrow-light">Vamos trabalhar juntos</p>
+        <h2 class="contact-title">Tem um projeto<br /><em>em mente?</em></h2>
+        <p class="contact-sub">Fale conosco e vamos criar algo extraordinário.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20HOMAUT%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." class="btn-primary btn-light" target="_blank" rel="noopener noreferrer">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Falar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="./assets/logo-homaut-light.png" alt="HOMAUT" class="footer-logo" />
+        <span class="footer-tag">Estúdio Digital</span>
+      </div>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="#projetos" class="footer-link">Projetos</a>
+        <a href="#sobre" class="footer-link">Sobre</a>
+        <a href="#contato" class="footer-link">Contato</a>
+        <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20HOMAUT%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." class="footer-link footer-wa-link" target="_blank" rel="noopener noreferrer">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.3em">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </nav>
+      <p class="footer-copy">© 2026 HOMAUT. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5579996018393?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20HOMAUT%20e%20gostaria%20de%20falar%20sobre%20um%20projeto."
+     class="wa-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar pelo WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-float-tip">Falar pelo WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
