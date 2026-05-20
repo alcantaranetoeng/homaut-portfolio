@@ -39,21 +39,77 @@
   /* ── NAV: mobile toggle ──────────────────────────────────── */
   var navToggle = document.getElementById('navToggle');
   var navLinks  = document.getElementById('navLinks');
+  var _savedScrollY = 0;
+  var _menuOpen     = false;
 
-  navToggle.addEventListener('click', function () {
-    var isOpen = navLinks.classList.toggle('open');
-    navToggle.classList.toggle('active', isOpen);
-    navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+  /* Trava o scroll do body de forma compatível com iOS Safari.
+     Apenas aplicar overflow:hidden no body NÃO funciona no iOS —
+     é necessário usar position:fixed com top negativo. */
+  function lockBodyScroll() {
+    _savedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top      = '-' + _savedScrollY + 'px';
+    document.body.style.left     = '0';
+    document.body.style.right    = '0';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function unlockBodyScroll() {
+    document.body.style.position = '';
+    document.body.style.top      = '';
+    document.body.style.left     = '';
+    document.body.style.right    = '';
+    document.body.style.overflow = '';
+    window.scrollTo(0, _savedScrollY);
+  }
+
+  function openMenu() {
+    if (_menuOpen) return;
+    _menuOpen = true;
+    navLinks.classList.add('open');
+    navToggle.classList.add('active');
+    navToggle.setAttribute('aria-label', 'Fechar menu');
+    navToggle.setAttribute('aria-expanded', 'true');
+    /* Garante que a nav bar fique visível (com background) sobre o menu */
+    nav.classList.add('scrolled');
+    lockBodyScroll();
+  }
+
+  function closeMenu() {
+    if (!_menuOpen) return;
+    _menuOpen = false;
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('active');
+    navToggle.setAttribute('aria-label', 'Abrir menu');
+    navToggle.setAttribute('aria-expanded', 'false');
+    unlockBodyScroll();
+    /* Restaura o estado real do scroll na nav bar */
+    updateNav();
+  }
+
+  /* Botão hambúrguer: alterna abrir/fechar */
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    _menuOpen ? closeMenu() : openMenu();
   });
 
+  /* Clicar no backdrop (fora dos itens) fecha o menu */
+  navLinks.addEventListener('click', function (e) {
+    if (e.target === navLinks) closeMenu();
+  });
+
+  /* Clicar em qualquer link fecha o menu */
   navLinks.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
-      navLinks.classList.remove('open');
-      navToggle.classList.remove('active');
-      navToggle.setAttribute('aria-label', 'Abrir menu');
-      document.body.style.overflow = '';
+      closeMenu();
     });
+  });
+
+  /* ESC fecha o menu */
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && _menuOpen) {
+      closeMenu();
+    }
   });
 
   /* ── SMOOTH SCROLL ───────────────────────────────────────── */
